@@ -1,0 +1,94 @@
+﻿    /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+    
+    a.navbar-brand {
+        white-space: normal;
+        text-align: center;
+        word-break: break-all;
+    }
+    /* Sticky footer styles
+-------------------------------------------------- */
+    
+    html {
+        font-size: 14px;
+    }
+    
+    @media (min-width: 768px) {
+        html {
+            font-size: 16px;
+        }
+    }
+    
+    .border-top {
+        border-top: 1px solid #e5e5e5;
+    }
+    
+    .border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .box-shadow {
+        box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    }
+    
+    button.accept-policy {
+        font-size: 1rem;
+        line-height: inherit;
+    }
+    /* Sticky footer styles
+-------------------------------------------------- */
+    
+    html {
+        min-height: 100%;
+    }
+    
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 60px;
+    }
+    
+  
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'title title title title title title'
+        'menu main main main main main'
+        'footer footer footer footer footer footer';    
+    }
+
+
+    .title-bar {
+        background-color: red;
+        grid-area: title;
+    }
+    .navigation-menu{
+        background-color: green;
+        grid-area: menu;
+        width:100%;
+       
+    }
+    .site-area{
+        position: relative;
+        background-color: blue;
+        grid-area: main;
+        width:100%;
+    }
+    .menu{
+        font-size: 16px;
+        background-color: grey;
+        
+        width:100%;
+    }
+    .menu a{
+        display:block;
+        color : red;
+        border-bottom: 1px;
+        border-top: 1px;
+        border-style:solid;
+        border-color: black; 
+        text-align: center;
+    }
+      .footer {
+        grid-area: footer;
+        background-color: yellow;
+    }
