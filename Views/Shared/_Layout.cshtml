@@ -18,27 +18,9 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div class="grid-container">
-        <div class="title-bar">
-        Pasek Tytułowy
-        </div>
-        <div class="navigation-menu">
-        <nav class="menu">
-            <a href="/Show/">Wyświetl</a>
-            <a href="/Add/">Dodaj</a>
-            <a href="/Delete/">Usuń</a>
-            <a href="/Update/">Zmień</a>
-        </nav>
-        </div>
-        <div class="site-area">
              @RenderBody()
     
 
              @RenderSection("Scripts", required: false)
-        </div>
-        <div class="footer">Strona wykonana przez: Paweł Koelmer s15988</div>
-    </div>
-
-   
 </body>
 </html>

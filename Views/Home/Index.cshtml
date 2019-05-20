@@ -1,3 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Strona główna";
 }
+@{
+    if(sPost){
+        string login = Request.From["login"];
+        <text>
+            Login: @login
+        </text>
+    }
+}
+<h2 class="main-title">Witam na stronie projektu</h2>
+
+<p class="main-p">Aby zobaczyć dalszą treść należy się zalogować<br>
+    lub jeśli nie posiadasz jeszcze konta zarejestruj się.
+</p>
+
+<form method="post" class="main-form">
+    <label class="main-label">Login:<input type="text" class="main-input" name="login"></label>
+    <label class="main-label">Password:<input type="text" class="main-input"></label>
+    
+    <input type = "submit" class="main-signIn-button" value="Zaloguj">
+</form>
